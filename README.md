@@ -58,7 +58,7 @@ transform2.rotateX(360).rotateY(180).scale(1.5);
 
 var interpolation = transform1.interpolation(transform2);
 
-var animation = new Evolution(equations.cubic, 1000, function(delta) {
+var animation = new Evolution(1000, equations.cubic, function(delta) {
   element.style.WebkitTransform = interpolation.step(delta).compose();
 });
 
