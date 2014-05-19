@@ -1,3 +1,3 @@
 'use strict';
 
-module.exports = require('./lib/evolution');
+module.exports = require('./lib/transition');

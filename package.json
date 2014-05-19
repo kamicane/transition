@@ -1,11 +1,11 @@
 {
-  "name": "evolution",
+  "name": "transition",
   "version": "0.1.0",
   "description": "simple animation library",
   "main": "./index.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/kamicane/evolution.git"
+    "url": "https://github.com/kamicane/transition.git"
   },
   "keywords": [
     "transition",
@@ -15,9 +15,9 @@
   "author": "Valerio Proietti <kamicane@gmail.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/kamicane/evolution/issues"
+    "url": "https://github.com/kamicane/transition/issues"
   },
-  "homepage": "https://github.com/kamicane/evolution",
+  "homepage": "https://github.com/kamicane/transition",
   "dependencies": {
     "prime": "^0.4.2",
     "mout": "^0.9.1"

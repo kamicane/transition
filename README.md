@@ -1,6 +1,6 @@
-# Evolution
+# Transition
 
-Evolution is a simple animation library.
+Transition is a simple animation library.
 It is based on requestAnimationFrame.
 Its only job is to calculate a delta based on a duration and an equation.
 It is kept simple to be able to animate any number of things, with any interpolation logic.
@@ -16,10 +16,10 @@ An animation can be `idle`, `active`, or `paused`.
 ## Usage
 
 ```js
-var Evolution = require('evolution');
-var equations = require('evolution/equations');
+var Transition = require('transition');
+var equations = require('transition/equations');
 
-var animation = new Evolution(1000, equations.sineIn, function(delta) {
+var animation = new Transition(1000, equations.sineIn, function(delta) {
   console.log(delta);
 });
 
@@ -46,9 +46,9 @@ console.log(animation.idle);
 ```js
 
 var Transform3d = require('transform3d');
-var Evolution = require('evolution');
+var Transition = require('transition');
 
-var equations = require('evolution/equations');
+var equations = require('transition/equations');
 
 var transform1 = new Transform3d();
 var transform2 = new Transform3d();
@@ -58,7 +58,7 @@ transform2.rotateX(360).rotateY(180).scale(1.5);
 
 var interpolation = transform1.interpolation(transform2);
 
-var animation = new Evolution(1000, equations.cubic, function(delta) {
+var animation = new Transition(1000, equations.cubic, function(delta) {
   element.style.WebkitTransform = interpolation.step(delta).compose();
 });
 
